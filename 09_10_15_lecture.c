@@ -14,7 +14,7 @@
                         "sizeof(*(" #X ")) = %d\n\n",\
                         X, __LINE__, sizeof(X), /*&(X), sizeof(&(X)),*/ *(X), sizeof(*(X)));
 ///******************
-/// Multiplying of matrix, functions with vectors, dynamic array
+/// PLAN: Multiplying of matrix, functions with vectors, dynamic array
 ///******************
 
 
@@ -25,7 +25,7 @@ struct Vector_t
     //#endif
     int x,y;
     int length;
-}; // + functions
+};
 
 void Vector_ctor (struct Vector_t* this, int x, int y)//constructor
 {
@@ -56,13 +56,13 @@ void Vector_Dump(const struct Vector_t* this)
 int main()
 {
     int x = 0;
-    /*struct Vector_t v1 = {1, 0}, v2 = {};
+    struct Vector_t v1 = {1, 0}, v2 = {};
     Vector_ctor(&v1, 1, 0);
     Vector_ctor(&v2, 2, 3);
     v1.x += v2.x;
     v1.y += v2.y;
     PRINT(v1.x)
-    PRINT(v1.y)*/
-    printf("%d", sizeof(_Bool));
+    PRINT(v1.y)
+    printf("SIZEOF BOOL: %d\n", sizeof(_Bool));
     return 0;
 }

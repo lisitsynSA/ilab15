@@ -10,6 +10,7 @@
                         X, __LINE__, sizeof(X), *(X), sizeof(*(X)));
 
 /// cache friendly mul of matrix
+/// hardware
 int main()
 {
     return 0;
